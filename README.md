@@ -474,7 +474,7 @@ Returns a promise of an array of all items across pages for a list request.
 
 ```js
 const allNewCustomers = await stripe.customers
-  .list({created: {gt: lastMonth}, limit: 100}) // 100 items per page
+  .list({created: {gt: lastMonth}, limit: 100}) // 100 items per page   
   .autoPagingToArray({limit: 10000}); // Stop after 10000 items total
 ```
 
@@ -483,7 +483,7 @@ const allNewCustomers = await stripe.customers
 By default, the library sends request telemetry to Stripe regarding request
 latency and feature usage. These
 numbers help Stripe improve the overall latency of its API for all users, and
-improve popular features.
+improve popular features.  
 
 You can disable this behavior if you prefer:
 
